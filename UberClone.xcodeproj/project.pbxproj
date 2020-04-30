@@ -13,6 +13,10 @@
 		C2412D11245311670047F2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2412D10245311670047F2A3 /* Assets.xcassets */; };
 		C2412D14245311670047F2A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2412D13245311670047F2A3 /* Preview Assets.xcassets */; };
 		C2412D17245311670047F2A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2412D15245311670047F2A3 /* LaunchScreen.storyboard */; };
+		C290406D245A970F00B94C8A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290406C245A970F00B94C8A /* MapView.swift */; };
+		C290406F245A975400B94C8A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290406E245A975400B94C8A /* Home.swift */; };
+		C2904071245A97B900B94C8A /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2904070245A97B900B94C8A /* Loader.swift */; };
+		C2904073245A97E700B94C8A /* BookedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2904072245A97E700B94C8A /* BookedView.swift */; };
 		C2EA47102456A879008DA783 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2EA470F2456A879008DA783 /* GoogleService-Info.plist */; };
 		F9878B7C591E07FAB57CFB75 /* Pods_UberClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55F9B29577C903A7421B15B /* Pods_UberClone.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +32,10 @@
 		C2412D13245311670047F2A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2412D16245311670047F2A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2412D18245311670047F2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C290406C245A970F00B94C8A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C290406E245A975400B94C8A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C2904070245A97B900B94C8A /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		C2904072245A97E700B94C8A /* BookedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookedView.swift; sourceTree = "<group>"; };
 		C2EA470F2456A879008DA783 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F644AE5942030E0C050F8D23 /* Pods-UberClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberClone.debug.xcconfig"; path = "Target Support Files/Pods-UberClone/Pods-UberClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +90,7 @@
 		C2412D09245311640047F2A3 /* UberClone */ = {
 			isa = PBXGroup;
 			children = (
+				C290406B245A96F600B94C8A /* Swift UI */,
 				C2412D0A245311640047F2A3 /* AppDelegate.swift */,
 				C2412D0C245311640047F2A3 /* SceneDelegate.swift */,
 				C2412D0E245311640047F2A3 /* ContentView.swift */,
@@ -100,6 +109,17 @@
 				C2412D13245311670047F2A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C290406B245A96F600B94C8A /* Swift UI */ = {
+			isa = PBXGroup;
+			children = (
+				C290406C245A970F00B94C8A /* MapView.swift */,
+				C290406E245A975400B94C8A /* Home.swift */,
+				C2904070245A97B900B94C8A /* Loader.swift */,
+				C2904072245A97E700B94C8A /* BookedView.swift */,
+			);
+			path = "Swift UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2412D0B245311640047F2A3 /* AppDelegate.swift in Sources */,
+				C290406D245A970F00B94C8A /* MapView.swift in Sources */,
+				C2904073245A97E700B94C8A /* BookedView.swift in Sources */,
+				C2904071245A97B900B94C8A /* Loader.swift in Sources */,
+				C290406F245A975400B94C8A /* Home.swift in Sources */,
 				C2412D0D245311640047F2A3 /* SceneDelegate.swift in Sources */,
 				C2412D0F245311640047F2A3 /* ContentView.swift in Sources */,
 			);
