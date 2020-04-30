@@ -24,6 +24,7 @@ struct Home: View {
     @State var book = false
     @State var doc = ""
     @State var data: Data = .init(count: 0)
+    @State var search = false
     var body: some View {
         ZStack {
             ZStack(alignment: .bottom) {
@@ -37,6 +38,12 @@ struct Home: View {
                             }
                         }
                         Spacer()
+                        
+                        Button(action: {
+                            self.search.toggle()
+                        }) {
+                            Image(systemName: "magnifyingglass").foregroundColor(Color.black)
+                        }
                     }.padding()
                         .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
                         .background(Color.white)
@@ -91,6 +98,10 @@ struct Home: View {
             
             if self.book {
                 Booked(data: self.$data, doc: self.$doc, loading: self.$loading, book: self.$book)
+            }
+            
+            if self.search {
+                SearchView(show: self.$search, map: self.$map, source: self.$source, destination: self.$destination, name: self.$name, distance: self.$distance, time: self.$time, detail: self.$show)
             }
         }
         .edgesIgnoringSafeArea(.all)
